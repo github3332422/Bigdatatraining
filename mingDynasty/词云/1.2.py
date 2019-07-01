@@ -63,7 +63,7 @@ def Statistics(txtcut):
 '''
 def wordcloud(txt_cut):
     result = " ".join(txt_cut)
-    image = Image.open(r'index.png')
+    image = Image.open(r'index.jpg')
     graph = np.array(image)
     wc = WordCloud(
         font_path=r'.\simhei.ttf',  # 字体地址
@@ -94,7 +94,7 @@ def main():
     s = txt_cut(str)
     # print(s[:15])
     #生成柱状图
-    # Statistics(s)
+    Statistics(s)
     #生成词云
     wordcloud(s)
 
